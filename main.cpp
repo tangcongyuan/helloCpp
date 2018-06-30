@@ -1,6 +1,8 @@
 #include <iostream>
 #include <systemc>
 #include <cassert>
+#include <fstream>
+#include <string>
 #include "Initiator.h"
 
 using namespace std;
@@ -35,6 +37,16 @@ int main(int argc, char** argv) {
 	cout << "funWithPointer(*pointer): " << funWithPointer(pointer) << endl;
 	cout << "After craziness num: " << num << endl;
 	cout << "After craziness *pointer: " << *pointer << endl;
+
+	// const char* c = "word";
+	// cout << "char *c = " << *(c+1) << endl;
+
+	// cout << endl;
+	// ifstream in ("main.cpp");
+	// int lineNum = 1;
+	// string line;
+	// while(getline(in, line))
+	// 	cout << lineNum++ << ":\t" << line << endl;
 
 	return 0;
 }
